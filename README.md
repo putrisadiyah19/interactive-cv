@@ -17,9 +17,12 @@ Website portofolio interaktif pribadi yang menampilkan informasi seperti profil,
 - **Frontend**: Vue 3, Tailwind CSS, Vite
 - **Backend**: Express.js (Node.js)
 - **Routing**: Vue Router
+- **Styling: Tailwind CSS
+- **PDF Support: CV bisa di-download dari folder public/cv-putri.pdf
 
 ## 📁 Struktur Proyek
 
+<pre> ``` 
 interactive-cv/
 ├── backend/
 │   ├── routes/
@@ -67,7 +70,7 @@ interactive-cv/
 ├── package-lock.json
 ├── package.json
 └── README.md
-
+ ``` </pre>
 
 ## 🧪 Cara Menjalankan Proyek
 
