@@ -29,6 +29,17 @@ onMounted(async () => {
         >
           <h3 class="text-lg font-bold text-blue-700">{{ cert.title }}</h3>
           <p class="text-sm text-gray-600">{{ cert.issuer }} • {{ cert.year }}</p>
+
+          <div v-if="cert.techStack" class="flex flex-wrap gap-2 mt-2 mb-2">
+            <span
+              v-for="tech in cert.techStack"
+              :key="tech"
+              class="text-xs bg-blue-100 text-blue-600 font-medium px-2 py-1 rounded-full"
+            >
+              {{ tech }}
+            </span>
+          </div>
+
           <a
             :href="cert.certificateUrl"
             target="_blank"

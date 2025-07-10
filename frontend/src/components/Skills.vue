@@ -1,10 +1,10 @@
 <template>
   <section id="skills" class="py-16 px-6 bg-gray-50 dark:bg-gray-900">
     <div class="container mx-auto">
-      <h2 class="text-3xl font-bold text-center text-gray-800 dark:text-white mb-10">Skills</h2>
+     
+      <SectionTitle title="Skills" />
 
       <div v-if="skills.length > 0" class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
-        
         <div
           v-for="skill in skills"
           :key="skill.id"
@@ -42,15 +42,13 @@
 defineOptions({ name: 'SkillsSection' });
 import { ref, onMounted } from 'vue';
 import axios from 'axios';
+import SectionTitle from './SectionTitle.vue';
 
-// Script ini sudah benar, tidak perlu diubah.
-// Tugasnya adalah mengambil data dari backend.
 const skills = ref([]);
 
 onMounted(async () => {
   try {
     const response = await axios.get('http://localhost:3000/api/skills');
-    // Memastikan kita mengambil array dari dalam properti 'data'
     if (response.data) {
       skills.value = response.data;
     }

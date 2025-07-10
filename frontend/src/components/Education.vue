@@ -26,15 +26,15 @@ onMounted(async () => {
         <div v-for="edu in educationHistory" :key="edu.id" class="mb-10 ml-4 pl-6 relative">
   <div class="absolute -left-6 top-1 timeline-dot"></div>
   <div class="flex items-start gap-3">
-    <!-- ICON -->
+
     <div class="flex-shrink-0 mt-1 text-blue-500">
-      <!-- Ikon kampus/sekolah -->
+
       <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 24 24">
         <path d="M12 2L1 7l11 5 9-4.09V17h2V7L12 2z" />
       </svg>
     </div>
 
-    <!-- Text -->
+ 
     <div>
       <h3 class="text-lg font-semibold text-blue-700">{{ edu.school }}</h3>
       <p class="text-sm text-gray-500 font-medium">{{ edu.degree }} • {{ edu.year }}</p>
