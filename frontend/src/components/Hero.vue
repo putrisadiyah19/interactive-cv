@@ -21,8 +21,6 @@
         <p><strong>Nama Lengkap:</strong> Halimatussadiyah Lola Putri</p>
         <p><strong>NIM:</strong> 23.11.5398</p>
         <p><strong>Email:</strong> halimatussadiyahlolaputri@students.amikom.ac.id</p>
-        <p><strong>Tempat, Tanggal Lahir:</strong> Jambi, 19 Juni 2005</p>
-        <p><strong>Alamat:</strong> Dusun Jambi Dalam, Kec. Manismata, Kab. Ketapang, prov. Kalimantan Barat</p>
       </div>
 
       <!-- Tombol Hubungi -->
